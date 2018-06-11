@@ -1,2 +1,5 @@
 /* 자주 쓸 CSS 태그 만들어 놓기 */
 
+.clear {
+	clear: both;
+}
