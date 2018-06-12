@@ -1,0 +1,44 @@
+/* <div class="footer">
+			<div class="notice"></div>
+			<div class="asdie"></div>
+			<div class="last"></div>
+		</div>
+ */
+
+.footer{
+	width: 1100px;
+	height: 350px;
+}
+.footer .notice{
+	width: 1100px;
+	height: 46px;
+	margin-bottom: 50px;
+	/* border : solid 1px black; */
+}
+.footer .aside{
+	margin-top: 80px;
+	margin-bottom:80px;
+	width: 1100px;
+	height: 110px;
+	/* border : solid 1px blue; */
+}
+h3.name{
+	display: inline;
+}
+ul.au_1 li{
+	display: inline;
+}
+div.right1{
+	float: right;
+}
+div.right2{
+	float: right;
+}
+
+.footer .last{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 1100px;
+	height: 160px;
+	/* border : solid 1px red; */
+}
