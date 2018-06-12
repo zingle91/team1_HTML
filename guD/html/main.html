@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	<script>
+		function showSearch()
+		{
+			$(".black_screen").css("display","block");
+			$(".search_wrap").addClass("on");
+		}
+		function closeBs()
+		{
+			$(".black_screen").css("display","none");
+			$(".search_wrap").removeClass("on");
+		}
+		function changeTab(idx) 
+		{
+			$(".search_detail dt").removeClass("on");
+			if(idx == "1") {
+				$(".recom_tab").addClass("on");
+			}else if(idx == "2") {
+				$(".popul_tab").addClass("on");
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div class="black_screen" onclick="closeBs();"></div>
+	<!-- 헤더 영역 -->
+	<header id="header">
+		<a id="logo" href="#"><img src="../img/main/logo.png"></a>
+		<!-- 전체 검색 -->
+		<div class="search_wrap">
+			<fieldset class="main_search">
+				<label onclick="showSearch()">
+					<input type="text" class="search_word" placeholder="해시태그 검색 ex) #회식하기_좋은집">
+				</label>
+				<input type="submit" class="btn_search" value="검색">
+			</fieldset>
+			<div class="search_detail">
+				<dl>
+					<dt class="recom_tab on" onclick="changeTab('1')">추천 검색어</dt>
+					<dd>첫번째 탭 메뉴 내용</dd>
+					<dt class="popul_tab" onclick="changeTab('2')">인기 검색어</dt>
+					<dd>두번째 탭 메뉴 내용</dd>
+				</dl>
+			</div>
+		</div>
+		<nav class="nav_menus">
+			<div class="menu">
+				<a href="#">구D스토리</a>
+				<a href="#" class="other_menu"><img src="../img/main/person.png" alt="my"></a>
+			</div>
+		</nav>		
+
+	</header>
+	<!-- 본문 영역 -->
+	<main>
+
+		<article>
+			<div class="main_top">
+				<div class="category_food">
+					<ul>
+						<li><a href="#">전체</a></li>
+						<li><a href="#chicken_best">치킨</a></li>
+						<li><a href="#pizza_best">피자</a></li>
+						<li><a href="#meat_best">고기집</a></li>
+						<li><a href="#sulzip_best">술집</a></li>
+						<li><a href="#">떡볶이</a></li>
+						<li><a href="#">돈까스</a></li>
+						<li><a href="#">일식집</a></li>
+						<li><a href="#">중국집</a></li>
+						<li><a href="#">냉면</a></li>
+						<li><a href="#">보쌈</a></li>
+						<li><a href="#">족발</a></li>
+						<li><a href="#">칼국수</a></li>
+						<li><a href="#">곱창</a></li>
+						<li><a href="#">횟집</a></li>
+						<li><a href="#">카페</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 인기 리스트 -->
+			<section class="module" id="chicken_best">
+				<h2>치킨 BEST 6</h2>
+				<div class="slider">
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<script>
+					$("#chicken_best .slider").slick({
+						autoplay:false,
+						slidesToShow:3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots:true
+					});
+				</script>
+			</section>
+			<section class="module" id="pizza_best">
+				<h2>피자 BEST 6</h2>
+				<div class="slider">
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<script>
+					$("#pizza_best .slider").slick({
+						autoplay:false,
+						slidesToShow:3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots:true
+					});
+				</script>
+			</section>
+			<section class="module" id="meat_best">
+				<h2>고기집 BEST 6</h2>
+				<div class="slider">
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<script>
+					$("#meat_best .slider").slick({
+						autoplay:false,
+						slidesToShow:3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots:true
+					});
+				</script>
+			</section>
+			<section class="module" id="sulzip_best">
+				<h2>술집 BEST 6</h2>
+				<div class="slider">
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#회식하기_좋은집</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/chicken.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구디 치킨</span>
+										<p class="hash">
+											<span>#혼술짱</span>
+											<span>#분위기좋음</span>
+											<span>#최애뿌링클</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="list_item">
+						<img src="../img/main/pasta.jpg">
+						<a href="#">
+							<figure class="info_wrap">
+								<figcaption class="info">
+									<div class="info_inner">
+										<span>구로디지털단지 치킨</span>
+										<p class="hash">
+											<span>#사장님_좋아요</span>
+											<span>#넓은_홀</span>
+											<span>#JMT</span>
+										</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<script>
+					$("#sulzip_best .slider").slick({
+						autoplay:false,
+						slidesToShow:3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots:true
+					});
+				</script>
+			</section>
+
+
+		</article>
+	</main>
+	<aside>
+		<a href="#" class="warp_top">상단</a>
+	</aside>
+	<footer>
+		<div class="footer">
+			이부분은 푸터입니다.
+		</div>
+	</footer>
+</body>
+</html>
