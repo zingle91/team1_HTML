@@ -1,15 +1,15 @@
-This is HTML work page of Goott team 1
+ï»¿This is HTML work page of Goott team 1
 
 teammates
 
-±è¼Ò¿µ
+ê¹€ì†Œì˜
 
-±è¼±Çö
+ê¹€ì„ í˜„
 
-±èÁÖ¼º
+ê¹€ì£¼ì„±
 
-Á¤ÀåÈ£
+ì •ì¥í˜¸
 
-ÀÌÀ¯Áø
+ì´ìœ ì§„
 
-ÃÖ½ÂÇÏ
+ìµœìŠ¹í•˜
