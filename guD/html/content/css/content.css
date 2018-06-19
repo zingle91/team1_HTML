@@ -1,0 +1,65 @@
+#section_top {
+	/*debug*/
+	/*border: solid 1px black;*/
+
+	/*박스위치 크기 조절*/
+	position: absolute;
+	top: 60px;
+	height: 400px;
+	width: 100%;
+
+	/*아이템 정렬*/
+	text-align: center;
+}
+
+#section_top>img {
+	width: 450px;
+	height: 100%;
+}
+
+#section_mid {
+	/*debug*/
+	/*border: solid 1px black;*/
+
+	/*박스위치 크기 조절*/
+	height: 1000px;
+	width: 100%;
+}
+
+#summary {
+	/*debug*/
+	/*border: solid 1px red;*/
+
+	/*박스위치 크기 조절*/
+	height: 400px;
+	width: 80%;
+	margin: auto;
+	padding-top: 10px;
+
+	text-align: center;
+	line-height: 40px;
+}
+
+.summary_table {
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.text_gray {
+	color: gray;
+}
+
+.text_right {
+	text-align: center;
+}
+
+#map_box {
+	/*height: 400px;*/
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#map_box>img {
+	width: 700px;
+	height: 400px;
+}

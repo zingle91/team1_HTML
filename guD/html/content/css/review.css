@@ -1,0 +1,85 @@
+	*{
+		margin: 0 auto;
+		padding: 0;
+	}
+
+
+	.title{
+		float: left;
+		margin-top: 20px;
+		color: orange;
+		font-size: 25px;
+	}
+
+	.title2{
+		float: right;
+		color: #cccccc;
+
+	}
+	.title2 li{
+		display: inline-block;
+		margin-top: 20px;
+	}
+	.title2 a{
+		text-decoration: none;
+		color: #CCCCCC;
+	}
+	.title2 a:hover{
+		color: #FF9933;
+	}
+	.titlebox{
+		margin-top: 50px;
+		border-top: solid 1px #cccccc;
+	}
+	.comment-box {
+		margin-top: 20px;
+		float: right;
+		padding: 15px 0 15px 0px; 
+		width: 86%;
+		border-bottom: solid 1px #cccccc;
+		padding-bottom: 50px;
+	}
+	
+
+	#nav-container {
+		width: 80%;
+		margin: 0px auto 0 auto;
+	}
+	.comment-name {
+		font-size: 18px;
+		color: #FF9933;
+	}
+	.comment-date {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: #b4b4b4;
+		padding: 7px 0 10px 0;
+		font-size: 12px;
+		font-weight: 100;
+	}
+	.comment-text {
+		margin: 10px 0 0 0;
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 25px;
+	}
+	.img{
+		margin-top: 20px;
+	}
+	.img img{
+		width: 100px;
+		height:100px;	
+	}
+	.img li{
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.hashtag {
+		color: blue;
+	}
+
+	.hashtag>a:hover {
+		color: #FF9933;
+		font-size: 50px;
+	}
