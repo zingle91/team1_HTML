@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS link -->
+	<link rel="stylesheet" href="bootstrap_t1.css">
+	<link rel="stylesheet" media="(min-width:768px)" href="list_common.css">
+	<link rel="stylesheet" type="text/css" href="header_common.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+
+	<!-- CSS link over -->
+	
+</head>
+<body>
+	<!-- 헤더 영역 -->
+	
+	<div id="wrap">
+		<header id="header">
+			<a id="logo" href="../main.html"><img src="img/logo.png"></a>
+			<!-- 전체 검색 -->
+			<div class="search_wrap">
+			<fieldset class="main_search">
+				<label onclick="showSearch()">
+					<input type="text" class="search_word" placeholder="해시태그 검색 ex) #회식하기_좋은집">
+				</label>
+				<input type="submit" class="btn_search" value="검색">
+			</fieldset>
+			<div class="search_detail">
+				<dl>
+					<dt class="recom_tab on" onclick="changeTab('1')">추천 검색어</dt>
+					<dd>첫번째 탭 메뉴 내용</dd>
+					<dt class="popul_tab" onclick="changeTab('2')">인기 검색어</dt>
+					<dd>두번째 탭 메뉴 내용</dd>
+				</dl>
+			</div>
+			</div>
+			<nav class="nav_menus">
+			<div class="menu">
+				<a href="#">구D스토리</a>
+				<a href="#" class="other_menu"><img src="img/person.png" alt="my"></a>
+			</div>
+			</nav>		
+		</header>
+		<main>	
+			<ul class="category_main">
+				<li class="category"><img src="img/category_icon.png" alt=""></li>
+				<li class="input_category">카테고리 1 <input type="checkbox"></li>
+				<li class="input_category">카테고리 2 <input type="checkbox"></li>
+				<li class="input_category">카테고리 3 <input type="checkbox"></li>
+				<li class="input_category">카테고리 4 <input type="checkbox"></li>
+				<li class="input_category">카테고리 5 <input type="checkbox"></li>
+				<li class="input_category">카테고리 6 <input type="checkbox"></li>
+			</ul>
+			<div class="clear"></div>
+			<div id="section">
+				<ul class="contentView">
+					<li>
+						<span class="contentView_left left_img_1">
+							<a href="#" class="img_link_img">
+								<div class="left_img_1_main"></div>
+								<div class="title_left_img_1">
+									<span class="hashtag">#분위기좋은..</span>
+									<span class="like">
+										<span>
+											<input type="image" placeholder="좋아요!" src="img/좋아요.png" />
+										</span>
+										<span>123</span>
+										<span>
+											<input type="image" placeholder="싫어요!" src="img/싫어요.png" />
+										</span>
+										<span>12</span>
+									</span>
+									<h2>강정이가 기가막형!</h2>
+								</div>
+							</a>
+						</span>
+					</li>
+
+					<li>
+						<span class="contentView_right right_img_1">
+							<a href="#" class="img_link_img">
+								<div class="left_img_2_main"></div>
+								<div class="title_left_img_1">
+									<span class="hashtag">#분위기좋은..</span>
+									<span class="like">
+										<span>
+											<input type="image" placeholder="좋아요!" src="img/좋아요.png" />
+										</span>
+										<span>123</span>
+										<span>
+											<input type="image" placeholder="싫어요!" src="img/싫어요.png" />
+										</span>
+										<span>12</span>
+									</span>
+									<h2>강정이가 기가막형!</h2>
+								</div>
+							</a>
+						</span>
+					</li>
+
+					<li>
+						<span class="contentView_left left_img_2">
+							<a href="#" class="img_link_img">
+								<div class="left_img_1_main"></div>
+								<div class="title_left_img_1">
+									<span class="hashtag">#분위기좋은..</span>
+									<span class="like">
+										<span>
+											<input type="image" placeholder="좋아요!" src="img/좋아요.png" />
+										</span>
+										<span>123</span>
+										<span>
+											<input type="image" placeholder="싫어요!" src="img/싫어요.png" />
+										</span>
+										<span>12</span>
+									</span>
+									<h2>강정이가 기가막형!</h2>
+								</div>
+							</a>
+						</span>
+						
+					</li>
+					<li>
+						<span class="contentView_right right_img_2">
+							<a href="#" class="img_link_img">
+								<div class="left_img_2_main"></div>
+								<div class="title_left_img_1">
+									<span class="hashtag">#분위기좋은..</span>
+									<span class="like">
+										<span>
+											<input type="image" placeholder="좋아요!" src="img/좋아요.png" />
+										</span>
+										<span>123</span>
+										<span>
+											<input type="image" placeholder="싫어요!" src="img/싫어요.png" />
+										</span>
+										<span>12</span>
+									</span>
+									
+									<h2>강정이가 기가막형!</h2>
+								</div>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="contentView_left left_img_2">
+							<a href="#" class="img_link_img">
+								<div class="left_img_1_main"></div>
+								<div class="title_left_img_1">
+									<span class="hashtag">#분위기좋은..</span>
+									<span class="like">
+										<span>
+											<input type="image" placeholder="좋아요!" src="img/좋아요.png" />
+										</span>
+										<span>123</span>
+										<span>
+											<input type="image" placeholder="싫어요!" src="img/싫어요.png" />
+										</span>
+										<span>12</span>
+									</span>
+									<h2>강정이가 기가막형!</h2>
+								</div>
+							</a>
+						</span>
+						
+					</li>
+					<li>
+						<span class="contentView_right right_img_2">
+							<a href="#" class="img_link_img">
+								<div class="left_img_2_main"></div>
+								<div class="title_left_img_1">
+									<span class="hashtag">#분위기좋은..</span>
+									<span class="like">
+										<span>
+											<input type="image" placeholder="좋아요!" src="img/좋아요.png" />
+										</span>
+										<span>123</span>
+										<span>
+											<input type="image" placeholder="싫어요!" src="img/싫어요.png" />
+										</span>
+										<span>12</span>
+									</span>
+									
+									<h2>강정이가 기가막형!</h2>
+								</div>
+							</a>
+						</span>
+					</li>
+				</ul>	
+			</div>
+		</main>	
+		<aside>
+		<a href="#" class="warp_top">상단</a>
+		</aside>
+		<footer>
+			<div id="footer">
+				<div id="notice">
+					<div class="area_notice">
+						<h3>공지사항</h3><a data-clk="ntc.notice" href="#" class="an_a">구D ‘개인정보 처리방침’ 변경에 대한 안내</a>
+					</div>
+				</div>
+				<div id="asdie">
+					<div class="area_user">
+						<ul class="au_1">
+							<li><h3 class="name">Creators</h3></li>
+							<li>김소영</li>
+							<li>김선현</li>
+							<li>김주성</li>
+							<li>이유진</li>
+							<li>정장호</li>
+							<li>최승하</li>
+							<div class="right1"><img src="../img/main/chicken.jpg" alt="" width="100"></div>
+							<div class="right2"><img src="../img/main/chicken.jpg" alt="" width="100"></div>
+						</ul>
+					</div>
+					<ul class="au_1">
+						<li><h3 class="name">Company</h3></li>
+						<li>Goott</li>
+						<li>df</li>
+						<li>df</li>
+						<li>df</li>
+					</ul>
+				</div>
+				<ul class="au_1">
+					<li><h3 class="name">Copyrights</h3></li>
+					<li>망고 플레이트</li>
+					<li>00 company</li>
+					<li>00 company</li>
+					<li>00 company</li>
+				</ul>
+				<div class="last">
+					<div class="area_terms">
+						<h3 class="blind">구D 정책 및 약관</h3>
+						<ul class="at_1">
+							<li class="at_iem"> 제1조(목적) : 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- class="footer" -->
+		</footer>	
+	</div> <!-- #wrap -->
+</body>
+</html>

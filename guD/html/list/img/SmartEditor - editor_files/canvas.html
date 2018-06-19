@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)http://blog.editor.naver.com/editor/canvas?serviceId=blog&deviceType=desktop&docType=normal -->
+<html lang="ko" class="fixedsticky-withoutfixedfixed"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="robots" content="noindex,nofollow">
+	<title>SmartEditor inputarea</title>
+	
+		
+		
+			<link href="./proxy_blog_desktop_canvas.css" rel="stylesheet" type="text/css">
+		
+	
+
+<style id="minFontCSS" type="text/css">@font-face{font-family:se_NanumGothic;font-weight:400;src:local(나눔고딕),local(nanumgothic),local(나눔고딕OTF),local(nanumgothicotf),url(https://ssl.pstatic.net/static.editor/static/font/NanumGothic_LW_R.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/NanumGothic_LW_R.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/NanumGothic_LW_R.ttf) format("truetype")}
+@font-face{font-family:se_NanumMyeongjo;font-weight:400;src:local(나눔명조),local(nanummyeongjo),local(나눔명조OTF),local(nanummyeongjootf),url(https://ssl.pstatic.net/static.editor/static/font/NanumMyeongjo_LW_R.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/NanumMyeongjo_LW_R.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/NanumMyeongjo_LW_R.ttf) format("truetype")}
+@font-face{font-family: 'Source Code Pro';font-weight:400;font-style: normal;font-stretch: normal;src:url(https://ssl.pstatic.net/static.editor/static/font/SourceCodePro-Regular.ttf.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/SourceCodePro-Regular.otf.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/SourceCodePro-Regular.ttf) format("truetype")}
+@font-face{font-family:se_NanumBarunGothic;font-weight:400;src:local(나눔바른고딕),local(nanumbarungothic),local(나눔바른고딕OTF),local(nanumbarungothicotf),url(https://ssl.pstatic.net/static.editor/static/font/NanumBarunGothic_LW_R.woff2) format("woff2"),url(https://ssl.pstatic.net/static.editor/static/font/NanumBarunGothic_LW_R.woff) format("woff"),url(https://ssl.pstatic.net/static.editor/static/font/NanumBarunGothic_LW_R.ttf) format("truetype")}
+</style></head>
+<body class="se_blog se_blog_layout2">
+<div class="se_body_wrap ui-selectable se_theme_transparent" id="se_canvas_body">
+	<div id="se_canvas_wrapper" class="se_component_wrap">
+	    <div id="se_title_wrapper"><div class="__se_component se_component se_documentTitle documentTitle_blog" id="documentTitle_8089262071528955930040">
+	<div class="se_background" style="background-image: url(); background-position: ">
+    	<div class="se_background_dim"></div> 
+    </div>
+    <div class="se_sectionArea se_align-left">
+        <div class="se_editArea"><div class="fixedsticky-dummy" style="height: 0px;"></div>
+            <div class="se_selectionArea"></div>
+        	<div class="se_viewArea se_ff_nanumgothic se_fs_D2">
+				<div class="se_editView se_title" data-selector="editor_area">
+					<div class="se_textView">
+						<textarea class="se_editable se_textarea" placeholder="제목" rows="1"></textarea>
+					</div>
+				</div>
+			</div> 
+        </div>
+	    <ul class="se_documentTitle_btn_wrap">
+			<li class="se_documentTitle_btn_list se_changeImage">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="se_btn_changeImage" title="커버사진"><span class="blind">제목영역 배경이미지 변경</span></a>
+			</li>
+            <li class="se_documentTitle_btn_list se_cloudSns">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="se_btn_cloudSns" title="클라우드/SNS 사진 불러오기"><span class="blind">제목영역 배경이미지 클라우드/SNS 사진 불러오기</span></a>
+            </li>
+            <li class="se_documentTitle_btn_list se_editImage ">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="se_btn_editImage" title="사진 편집"><span class="blind">사진 편집</span></a>
+            </li>
+		    <li class="se_documentTitle_btn_list se_movingBg">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="se_btn_movingBg" title="사진 위치 이동"><span class="blind">사진 위치 이동</span></a>
+		    </li>
+			<li class="se_documentTitle_btn_list se_trash">
+				<a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="se_btn_trash"><span class="blind">제목영역 배경이미지 삭제</span></a>
+			</li>
+		</ul>
+    </div>
+</div></div>
+	    <div id="se_components_wrapper" class="ui-sortable"><div class="__se_component se_component se_paragraph default ui-selectee is-focused" id="paragraph_1408534081528955930044">
+    <div class="se_sectionArea">
+        <div class="__editArea se_editArea"><div class="__drag_cancel __se_toolbar se_tool fixedsticky" style="top: 0px;">
+    <div class="__se_container se_toolbar">
+        <div class="se_toolbar_container">
+            <ul class="__se_btn_container se_toolbar_group"><li class="__se_fontFamily se_toolbar_list se_fontGroup is-on se_ff_nanumgothic">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_fontFamily" title="글꼴" data-group="fontFamily">
+                <span>나눔고딕</span>
+            </a>
+
+    <ul class="__se_select_options se_toolbarOption se_fontFamily_group">
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_fontFamily  " data-group="fontFamily" data-value="sans-serif" data-font="se_ff_sans-serif" data-nclick="font1" title="기본서체">
+                기본서체
+            </a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_fontFamily  " data-group="fontFamily" data-value="nanummyeongjo" data-font="se_ff_nanummyeongjo" data-nclick="font2" title="나눔명조">
+                나눔명조
+            </a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_fontFamily is-selected" data-group="fontFamily" data-value="nanumgothic" data-font="se_ff_nanumgothic" data-nclick="font3" title="나눔고딕">
+                나눔고딕
+            </a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_fontFamily  " data-group="fontFamily" data-value="nanumbarungothic" data-font="se_ff_nanumbarungothic" data-nclick="font4" title="바른고딕">
+                바른고딕
+            </a>
+        </li>
+    </ul>
+</li><li class="__se_fontSize se_toolbar_list se_fontSizeGroup is-on se_ff_nanumgothic">
+
+
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_paragraphSize" data-group="fontSize" title="글자 크기">본문3</a>
+
+    <ul class="__se_select_options se_toolbarOption se_headingSizeOption">
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_headingSize se_headingSize1" data-value="H1" data-nclick="sizet1" title="제목1">제목1</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_headingSize se_headingSize2" data-value="H2" data-nclick="sizet2" title="제목2">제목2</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_headingSize se_headingSize3" data-value="H3" data-nclick="sizet3" title="제목3">제목3</a>
+        </li>
+    </ul>
+    <ul class="__se_select_options se_toolbarOption se_paragraphSizeOption">
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize1" data-value="T1" data-nclick="sizec1" title="본문1">본문1</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize2" data-value="T2" data-nclick="sizec2" title="본문2">본문2</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize3 is-selected" data-value="T3" data-nclick="sizec3" title="본문3">본문3</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize4" data-value="T4" data-nclick="sizec4" title="본문4">본문4</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize5" data-value="T5" data-nclick="sizec5" title="본문5">본문5</a>
+        </li>
+    </ul>
+</li><li class="__se_fontSizeTitle se_toolbar_list se_fontSizeGroup se_ff_nanumgothic">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_headingSize" data-group="fontSizeTitle" title="제목 크기">제목2</a>
+
+    <ul class="__se_select_options se_toolbarOption se_documentTitleSizeOption">
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_documentTitleSize se_documentTitleSize1" data-value="D1" data-nclick="title1" title="제목1">제목1</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_documentTitleSize se_documentTitleSize2 is-selected" data-value="D2" data-nclick="title2" title="제목2">제목2</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_documentTitleSize se_documentTitleSize3" data-value="D3" data-nclick="title3" title="제목3">제목3</a>
+            </li>
+    </ul>
+</li><li class="__se_codeSize se_toolbar_list se_codeSizeGroup">
+
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_paragraphSize se_paragraphSize1" data-group="codeSize" title="코드 폰트크기 변경">본문3</a>
+
+        <ul class="__se_select_options se_toolbarOption se_codeSizeOption">
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize1" data-value="T1" data-nclick="sizec1" title="본문1">본문1</a>
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize2" data-value="T2" data-nclick="sizec2" title="본문2">본문2</a>
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize3 is-selected" data-value="T3" data-nclick="sizec3" title="본문3">본문3</a>
+                </li>
+        </ul>
+    </li><li class="__se_fontSizeParagraph se_toolbar_list se_paragraphSizeGroup">
+
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_paragraphSize" data-group="fontSizeParagraph" title="글자 크기">본문2</a>
+
+    <ul class="__se_select_options se_toolbarOption se_quotationSizeOption">
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize1" data-value="T1" data-nclick="sizec1" title="본문1">본문1</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize2 is-selected" data-value="T2" data-nclick="sizec2" title="본문2">본문2</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize3" data-value="T3" data-nclick="sizec3" title="본문3">본문3</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize4" data-value="T4" data-nclick="sizec4" title="본문4">본문4</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize5" data-value="T5" data-nclick="sizec5" title="본문5">본문5</a>
+        </li>
+    </ul>
+</li><li class="__se_fontSizeParagraph se_toolbar_list se_paragraphSizeGroup">
+
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_paragraphSize" data-group="fontSizeParagraph" title="글자 크기">본문4</a>
+
+    <ul class="__se_select_options se_toolbarOption se_quotationSizeOption">
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize1" data-value="T1" data-nclick="sizec1" title="본문1">본문1</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize2" data-value="T2" data-nclick="sizec2" title="본문2">본문2</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize3" data-value="T3" data-nclick="sizec3" title="본문3">본문3</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize4 is-selected" data-value="T4" data-nclick="sizec4" title="본문4">본문4</a>
+        </li>
+        <li class="se_toolbarOption_list">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_paragraphSize se_paragraphSize5" data-value="T5" data-nclick="sizec5" title="본문5">본문5</a>
+        </li>
+    </ul>
+</li><li class="__se_bold se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_bold" data-group="bold" data-nclick="bold" title="굵게">
+		
+        
+		<span class="blind">굵게</span></a>
+</li><li class="__se_italic se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_italic" data-group="italic" data-nclick="italic" title="기울임꼴">
+		
+        
+		<span class="blind">기울임꼴</span></a>
+</li><li class="__se_underline se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_underline" data-group="underline" data-nclick="underline" title="밑줄">
+		
+        
+		<span class="blind">밑줄</span></a>
+</li><li class="__se_linethrough se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_linethrough" data-group="strikeThrough" data-nclick="strike" title="취소선">
+		
+        
+		<span class="blind">취소선</span></a>
+</li><li class="__se_fontColor se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_fontColor" title="글자색" data-group="fontColor" data-nclick="color" style="background-color: rgb(0, 0, 0);"><span class="blind">글자색</span></a>
+
+    <div class="__se_select_options se_toolbarOption se_colorGroup">
+        <div class="se_subSetColor">
+            <span class="se_subSetTitle">최근 사용한 색</span>
+            <ul class="__se_recent_pallet">    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_defaultColor" data-value="" style="background-color:#fff" title="">
+                <span class="ico_none_color"></span>
+                <span class="blind">테마별 기본색 적용</span>
+        </a>
+    </li>
+</ul>
+        </div>
+        <div class="se_subSetColor fullset">
+            <span class="blind">새로운 글자색 지정하기</span>
+            <div class="__se_color_pallet"></div>
+        </div>
+    </div>
+</li><li class="__se_backgroundColor se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_fontBackground" title="배경색" data-group="backgroundColor" data-nclick="bgcolor"><span class="blind">배경색</span></a>
+
+    <div class="__se_select_options se_toolbarOption se_colorGroup">
+        <div class="se_subSetColor">
+            <span class="se_subSetTitle">최근 사용한 색</span>
+            <ul class="__se_recent_pallet">    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_defaultColor" data-value="" style="background-color:#fff" title="">
+                <span class="ico_none_color"></span>
+                <span class="blind">테마별 기본색 적용</span>
+        </a>
+    </li>
+</ul>
+        </div>
+        <div class="se_subSetColor fullset">
+            <span class="blind">새로운 글자색 지정하기</span>
+            <div class="__se_color_pallet"></div>
+        </div>
+    </div>
+</li><li class="__se_line_default se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line_default" data-group="line" data-nclick="type1" data-value="default" title="구분선1로 변경"><span class="blind">구분선1</span></a></li><li class="__se_line1 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line1" data-group="line" data-nclick="type2" data-value="line1" title="구분선2로 변경"><span class="blind">구분선2</span></a></li><li class="__se_line2 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line2" data-group="line" data-nclick="type3" data-value="line2" title="구분선3으로 변경"><span class="blind">구분선3</span></a></li><li class="__se_line3 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line3" data-group="line" data-nclick="type4" data-value="line3" title="구분선4로 변경"><span class="blind">구분선4</span></a></li><li class="__se_line4 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line4" data-group="line" data-nclick="type5" data-value="line4" title="구분선5로 변경"><span class="blind">구분선5</span></a></li><li class="__se_line5 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line5" data-group="line" data-nclick="type6" data-value="line5" title="구분선6으로 변경"><span class="blind">구분선6</span></a></li><li class="__se_line6 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line6" data-group="line" data-nclick="type7" data-value="line6" title="구분선7로 변경"><span class="blind">구분선7</span></a></li><li class="__se_line7 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_line7" data-group="line" data-nclick="type8" data-value="line7" title="구분선8로 변경"><span class="blind">구분선8</span></a></li><li class="__se_attachImage se_toolbar_list se_hasLine">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="사진 교체" class="__se_toolbar_btn se_toolbar_button se_attachImage" data-group="image" data-nclick="change">
+		<span class="blind">사진 교체</span>
+    </a>
+</li><li class="__se_editImage se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="사진 편집" class="__se_toolbar_btn se_toolbar_button se_editImage" data-group="imageEdit" data-nclick="edit">
+		<span class="blind">사진 편집</span>
+    </a>
+</li><li class="__se_mediaResize se_toolbar_list se_mediaResize_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_mediaResize se_mediaResize" title="크기 변경" data-group="mediaResize" data-nclick="resize">
+        <span class="blind">사진 크기</span></a>
+    <div class="se_toolbarOption se_mediaResize_group">
+        <div class="se_mediaResize_input_holder">
+            <div class="se_wrap_input_group">
+                <div class="se_mediaResize_input_width">
+                    <span class="se_mediaResize_guide">W</span><input class="se_mediaResize_input __se_input_width" type="text" placeholder="">
+                </div>
+                <div class="se_mediaResize_input_height">
+                    <span class="se_mediaResize_guide">H</span><input class="se_mediaResize_input __se_input_height" type="text" placeholder="">
+                </div>
+            </div>
+            <div class="se_wrap_inputBtn_group">
+                <div class="se_wrap_inputBtn_left">
+                    <a role="button" class="se_btn_mediaResize_reset __se_btn_reset is-disable" title="초기화"><span class="se_mediaResize_reset_txt">초기화</span></a>
+                </div>
+                <div class="se_wrap_inputBtn">
+                    <a role="button" class="se_btn_mediaResize_apply __se_btn_apply" title="확인"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li><li class="__se_mediaTag se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="상품 태깅" class="__se_toolbar_btn se_toolbar_button se_mediaTag" data-group="mediaTag" data-nclick="mediaTag">
+		<span class="blind">상품 태깅</span>
+            <i class="ico_new"></i>
+    </a>
+</li><li class="__se_componentAlignJustify se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignJustify" data-group="imageDisplay" data-nclick="fit" data-value="justify" title="문서 너비"><span class="blind">문서 너비</span></a></li><li class="__se_imageExtend se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_imageExtend" data-group="imageDisplay" data-nclick="over" data-value="extend" title="옆트임"><span class="blind">옆트임</span></a></li><li class="__se_map1 se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_map1" data-group="map" data-nclick="image" data-value="1" title="지도형으로 변경"><span class="blind">지도형</span></a></li><li class="__se_map2 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_map2" data-group="map" data-nclick="text" data-value="2" title="텍스트형으로 변경"><span class="blind">텍스트형</span></a></li><li class="__se_talktalkEdit se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="톡톡 편집" class="__se_toolbar_btn se_toolbar_button se_talktalkEdit" data-group="talktalk" data-nclick="edit">
+		<span class="blind">톡톡 편집</span>
+    </a>
+</li><li class="__se_editSchedule se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="일정 수정" class="__se_toolbar_btn se_toolbar_button se_editSchedule" data-group="schedule" data-nclick="edit">
+		<span class="blind">일정 수정</span>
+    </a>
+</li><li class="__se_componentAlignJustify se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignJustify" data-group="imageAlign" data-nclick="fit" data-value="justify" title="문서 너비"><span class="blind">문서 너비</span></a></li><li class="__se_componentAlignLeft se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignLeft" data-group="imageAlign" data-nclick="left" data-value="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a></li><li class="__se_componentAlignCenter se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignCenter" data-group="imageAlign" data-nclick="center" data-value="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a></li><li class="__se_componentAlignRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignRight" data-group="imageAlign" data-nclick="right" data-value="right" title="오른쪽 정렬"><span class="blind">오른쪽 정렬</span></a></li><li class="__se_componentAlignLeft se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignLeft" data-group="componentAlign" data-nclick="left" data-value="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a></li><li class="__se_componentAlignCenter se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignCenter" data-group="componentAlign" data-nclick="center" data-value="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a></li><li class="__se_componentAlignRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignRight" data-group="componentAlign" data-nclick="right" data-value="right" title="오른쪽 정렬"><span class="blind">오른쪽 정렬</span></a></li><li class="__se_textAlignGroup se_toolbar_list se_textAlignGroup">
+
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignGroup-left" data-group="textAlignGroup" title="텍스트 정렬"></a>
+
+        <ul class="__se_select_options se_toolbarOption se_textAlignOption">
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-left is-selected" data-value="left" data-nclick="left" title="좌측 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-center" data-value="center" data-nclick="center" title="가운데 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-right" data-value="right" data-nclick="right" title="우측 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-justify" data-value="justify" data-nclick="justify" title="양끝 정렬">
+                </a>
+            </li>
+        </ul>
+    </li><li class="__se_table_cell_bgcolor se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_table_cell_bgcolor" title="셀 배경색" data-group="cellBackgroundColor" data-nclick="bgcolor"><span class="blind">셀 배경색</span></a>
+
+    <div class="__se_select_options se_toolbarOption se_colorGroup">
+        <div class="se_subSetColor">
+            <span class="se_subSetTitle">최근 사용한 색</span>
+            <ul class="__se_recent_pallet">    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_defaultColor" data-value="" style="background-color:#fff" title="">
+                <span class="ico_none_color"></span>
+                <span class="blind">테마별 기본색 적용</span>
+        </a>
+    </li>
+</ul>
+        </div>
+        <div class="se_subSetColor fullset">
+            <span class="blind">새로운 글자색 지정하기</span>
+            <div class="__se_color_pallet"></div>
+        </div>
+    </div>
+</li><li class="__se_table_border se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_table_border" title="표 테두리">
+        <span class="blind">표 테두리</span>
+    </a>
+    <div class="__se_toolbarOption se_toolbarOption se_table_border_group">
+        <span class="se_subSetTitle">표 테두리</span>
+        
+        <div class="__se_style_wrapper se_table_border_part">
+           
+           
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="__se_border_style_btn btn_borderTypeChanger se_table_border_style se_table_border_style_thinLine"><span class="__se_label se_table_border_style_label">표 테두리</span></a>
+            <ul class="se_toolbarOption se_tableborderOption">
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_table_border_style se_table_border_style_thinLine" title="가는선으로 바꾸기" data-style-name="thinLine" data-table-width="0" data-table-style="" data-table-spacing="" data-table-collapse="" data-width="1px" data-style="solid" data-color="" data-nclick="thin">
+                        <span class="__se_table_border_style_label se_table_border_style_label">가는선</span></a>
+                    
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_table_border_style se_table_border_style_thickLine" title="굵은선으로 바꾸기" data-style-name="thickLine" data-table-width="0" data-table-style="" data-table-spacing="" data-table-collapse="" data-width="2px" data-style="solid" data-color="" data-nclick="thick">
+                        <span class="__se_table_border_style_label se_table_border_style_label">굵은선</span></a>
+                    
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_table_border_style se_table_border_style_dottedLine" title="점선으로 바꾸기" data-style-name="dottedLine" data-table-width="0" data-table-style="" data-table-spacing="" data-table-collapse="" data-width="1px" data-style="dashed" data-color="" data-nclick="dotted">
+                        <span class="__se_table_border_style_label se_table_border_style_label">점선</span></a>
+                    
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_table_border_style se_table_border_style_doubleLine" title="이중선으로 바꾸기" data-style-name="doubleLine" data-table-width="1px" data-table-style="solid" data-table-spacing="1px" data-table-collapse="separate" data-width="1px" data-style="solid" data-color="" data-nclick="double">
+                        <span class="__se_table_border_style_label se_table_border_style_label">이중선</span></a>
+                    
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_table_border_style se_table_border_style_thickDoubleLine" title="굵은 이중선으로 바꾸기" data-style-name="thickDoubleLine" data-table-width="1px 2px 2px 1px" data-table-style="solid" data-table-spacing="1px" data-table-collapse="separate" data-width="2px 1px 1px 2px" data-style="solid" data-color="" data-nclick="thickdouble">
+                        <span class="__se_table_border_style_label se_table_border_style_label">굵은 이중선</span></a>
+                    
+                </li>
+                <li class="se_toolbarOption_list">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_table_border_style se_table_border_style_none" title="테두리 없음으로 바꾸기" data-style-name="none" data-table-width="0" data-table-style="" data-table-spacing="" data-table-collapse="" data-width="0" data-style="" data-color="" data-nclick="none">
+                        <span class="__se_table_border_style_label se_table_border_style_label">테두리없음</span></a>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="__se_color_wrapper se_table_color_part">
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" role="button" class="__se_border_color_btn btn_borderColorTypeChanger" data-nclick="bordercolor" title="표 테두리 색 선택" style="background-color:#d4d4d4" data-color="#d4d4d4"><span class="blind">표 테두리 색</span></a>
+            <div class="se_toolbarOption se_colorGroup">
+            <div class="se_subSetColor">
+                <span class="se_subSetTitle">최근 사용한 테두리색</span>
+                <ul class="__se_recent_used_color_pallete">    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_defaultColor" data-value="" style="background-color:#fff" title="">
+                <span class="ico_none_color"></span>
+                <span class="blind">테마별 기본색 적용</span>
+        </a>
+    </li>
+</ul>
+            </div>
+            <div class="se_subSetColor fullset">
+                <span class="blind">새로운 글자 배경색 지정하기</span>
+                <ul class="__se_color_pallete">    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button se_defaultColor" data-value="" style="background-color:#fff" title="">
+                <span class="ico_none_color"></span>
+                <span class="blind">테마별 기본색 적용</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f7f7f7" style="background-color:#f7f7f7" title="#f7f7f7">
+                <span class="blind">#f7f7f7</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#e2e2e2" style="background-color:#e2e2e2" title="#e2e2e2">
+                <span class="blind">#e2e2e2</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#c2c2c2" style="background-color:#c2c2c2" title="#c2c2c2">
+                <span class="blind">#c2c2c2</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#9c9c9c" style="background-color:#9c9c9c" title="#9c9c9c">
+                <span class="blind">#9c9c9c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#858585" style="background-color:#858585" title="#858585">
+                <span class="blind">#858585</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#636363" style="background-color:#636363" title="#636363">
+                <span class="blind">#636363</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#404040" style="background-color:#404040" title="#404040">
+                <span class="blind">#404040</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#272727" style="background-color:#272727" title="#272727">
+                <span class="blind">#272727</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#000000" style="background-color:#000000" title="#000000">
+                <span class="blind">#000000</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#ffb39b" style="background-color:#ffb39b" title="#ffb39b">
+                <span class="blind">#ffb39b</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#ffd4a7" style="background-color:#ffd4a7" title="#ffd4a7">
+                <span class="blind">#ffd4a7</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#fff599" style="background-color:#fff599" title="#fff599">
+                <span class="blind">#fff599</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#c5dd9c" style="background-color:#c5dd9c" title="#c5dd9c">
+                <span class="blind">#c5dd9c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#7ec89d" style="background-color:#7ec89d" title="#7ec89d">
+                <span class="blind">#7ec89d</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#78ccc9" style="background-color:#78ccc9" title="#78ccc9">
+                <span class="blind">#78ccc9</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#85ddff" style="background-color:#85ddff" title="#85ddff">
+                <span class="blind">#85ddff</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#87c5ff" style="background-color:#87c5ff" title="#87c5ff">
+                <span class="blind">#87c5ff</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#bd8fbf" style="background-color:#bd8fbf" title="#bd8fbf">
+                <span class="blind">#bd8fbf</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f69fc1" style="background-color:#f69fc1" title="#f69fc1">
+                <span class="blind">#f69fc1</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f3704c" style="background-color:#f3704c" title="#f3704c">
+                <span class="blind">#f3704c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#fcaf59" style="background-color:#fcaf59" title="#fcaf59">
+                <span class="blind">#fcaf59</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#ffef4c" style="background-color:#ffef4c" title="#ffef4c">
+                <span class="blind">#ffef4c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#abd072" style="background-color:#abd072" title="#abd072">
+                <span class="blind">#abd072</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#30b478" style="background-color:#30b478" title="#30b478">
+                <span class="blind">#30b478</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00bab4" style="background-color:#00bab4" title="#00bab4">
+                <span class="blind">#00bab4</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00c8ff" style="background-color:#00c8ff" title="#00c8ff">
+                <span class="blind">#00c8ff</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#0092e6" style="background-color:#0092e6" title="#0092e6">
+                <span class="blind">#0092e6</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#a868a9" style="background-color:#a868a9" title="#a868a9">
+                <span class="blind">#a868a9</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f175a8" style="background-color:#f175a8" title="#f175a8">
+                <span class="blind">#f175a8</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f12f22" style="background-color:#f12f22" title="#f12f22">
+                <span class="blind">#f12f22</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#ff9c23" style="background-color:#ff9c23" title="#ff9c23">
+                <span class="blind">#ff9c23</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f4d400" style="background-color:#f4d400" title="#f4d400">
+                <span class="blind">#f4d400</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#7bb423" style="background-color:#7bb423" title="#7bb423">
+                <span class="blind">#7bb423</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00a350" style="background-color:#00a350" title="#00a350">
+                <span class="blind">#00a350</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#009991" style="background-color:#009991" title="#009991">
+                <span class="blind">#009991</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00afef" style="background-color:#00afef" title="#00afef">
+                <span class="blind">#00afef</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#0076c8" style="background-color:#0076c8" title="#0076c8">
+                <span class="blind">#0076c8</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#93338f" style="background-color:#93338f" title="#93338f">
+                <span class="blind">#93338f</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#f02c8c" style="background-color:#f02c8c" title="#f02c8c">
+                <span class="blind">#f02c8c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#9f190d" style="background-color:#9f190d" title="#9f190d">
+                <span class="blind">#9f190d</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#a46206" style="background-color:#a46206" title="#a46206">
+                <span class="blind">#a46206</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#a79a00" style="background-color:#a79a00" title="#a79a00">
+                <span class="blind">#a79a00</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#568228" style="background-color:#568228" title="#568228">
+                <span class="blind">#568228</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#007036" style="background-color:#007036" title="#007036">
+                <span class="blind">#007036</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00726a" style="background-color:#00726a" title="#00726a">
+                <span class="blind">#00726a</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#0077a4" style="background-color:#0077a4" title="#0077a4">
+                <span class="blind">#0077a4</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#004c80" style="background-color:#004c80" title="#004c80">
+                <span class="blind">#004c80</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#63155f" style="background-color:#63155f" title="#63155f">
+                <span class="blind">#63155f</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#a01a5c" style="background-color:#a01a5c" title="#a01a5c">
+                <span class="blind">#a01a5c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#5f0e06" style="background-color:#5f0e06" title="#5f0e06">
+                <span class="blind">#5f0e06</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#734300" style="background-color:#734300" title="#734300">
+                <span class="blind">#734300</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#675f00" style="background-color:#675f00" title="#675f00">
+                <span class="blind">#675f00</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#3a5919" style="background-color:#3a5919" title="#3a5919">
+                <span class="blind">#3a5919</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#004b24" style="background-color:#004b24" title="#004b24">
+                <span class="blind">#004b24</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00524c" style="background-color:#00524c" title="#00524c">
+                <span class="blind">#00524c</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#004c69" style="background-color:#004c69" title="#004c69">
+                <span class="blind">#004c69</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#00385f" style="background-color:#00385f" title="#00385f">
+                <span class="blind">#00385f</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#430d40" style="background-color:#430d40" title="#430d40">
+                <span class="blind">#430d40</span>
+        </a>
+    </li>
+    <li class="se_toolbarOption_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_tooltip_btn se_toolbar_button " data-value="#701441" style="background-color:#701441" title="#701441">
+                <span class="blind">#701441</span>
+        </a>
+    </li>
+</ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</li><li class="__se_textAlignLeft se_toolbar_list is-on is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignLeft" data-group="textAlign" data-nclick="left" data-value="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a></li><li class="__se_textAlignCenter se_toolbar_list is-on"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignCenter" data-group="textAlign" data-nclick="center" data-value="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a></li><li class="__se_textAlignRight se_toolbar_list is-on"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignRight" data-group="textAlign" data-nclick="right" data-value="right" title="오른쪽 정렬"><span class="blind">오른쪽 정렬</span></a></li><li class="__se_textAlignJustify se_toolbar_list is-on"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignJustify" data-group="textAlign" data-nclick="justify" data-value="justify" title="양끝 정렬"><span class="blind">양끝 정렬</span></a></li><li class="__se_textAlignGroup se_toolbar_list se_textAlignGroup">
+
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignGroup-left" data-group="textAlignGroup" title="텍스트 정렬"></a>
+
+        <ul class="__se_select_options se_toolbarOption se_textAlignOption">
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-left is-selected" data-value="left" data-nclick="left" title="좌측 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-center" data-value="center" data-nclick="center" title="가운데 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_textAlignGroup-right" data-value="right" data-nclick="right" title="우측 정렬">
+                </a>
+            </li>
+        </ul>
+    </li><li class="__se_textAlignLeft se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignLeft" data-group="textAlign" data-nclick="left" data-value="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a></li><li class="__se_textAlignCenter se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignCenter" data-group="textAlign" data-nclick="center" data-value="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a></li><li class="__se_textAlignRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignRight" data-group="textAlign" data-nclick="right" data-value="right" title="오른쪽 정렬"><span class="blind">오른쪽 정렬</span></a></li><li class="__se_textAlignLeft se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignLeft" data-group="textAlignTitle" data-nclick="left" data-value="left" title="왼쪽 정렬"><span class="blind">왼쪽 정렬</span></a></li><li class="__se_textAlignCenter se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_textAlignCenter" data-group="textAlignTitle" data-nclick="center" data-value="center" title="가운데 정렬"><span class="blind">가운데 정렬</span></a></li><li class="__ se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_lineHeight" title="줄간격 변경" data-group="lineHeight">
+    </a>
+    <ul class="__se_select_options se_toolbarOption se_lineheightOption">
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_option_btn se_toolbar_button" title="줄간격 140%로 바꾸기" data-lineheight="140" onclick="clickcr(this, &#39;txt.line140&#39;, &#39;&#39;, &#39;&#39;, event);">140%</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_option_btn se_toolbar_button" title="줄간격 160%로 바꾸기" data-lineheight="160" onclick="clickcr(this, &#39;txt.line160&#39;, &#39;&#39;, &#39;&#39;, event);">160%</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_option_btn se_toolbar_button" title="줄간격 180%로 바꾸기" data-lineheight="180" onclick="clickcr(this, &#39;txt.line180&#39;, &#39;&#39;, &#39;&#39;, event);">180%</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_option_btn se_toolbar_button is-selected" title="줄간격 190%로 바꾸기" data-lineheight="190" onclick="clickcr(this, &#39;txt.line190&#39;, &#39;&#39;, &#39;&#39;, event);">190%</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_option_btn se_toolbar_button" title="줄간격 200%로 바꾸기" data-lineheight="200" onclick="clickcr(this, &#39;txt.line200&#39;, &#39;&#39;, &#39;&#39;, event);">200%</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_option_btn se_toolbar_button" title="줄간격 230%로 바꾸기" data-lineheight="230" onclick="clickcr(this, &#39;txt.line230&#39;, &#39;&#39;, &#39;&#39;, event);">230%</a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <div class="se_lineheight_value">
+                    <input type="text" maxlength="3" placeholder="직접입력" class="__se_lineheight_input se_lineheight_input">
+                    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_btn_lineheight_apply __se_submit" onclick="clickcr(this, &#39;txt.linec&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">줄간격 적용</span></a>
+                </div>
+            </li>
+    </ul>
+</li><li class="__se_blockquote1 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_blockquote1" data-group="blockquote" data-nclick="type1" data-value="default" title="인용문1로 변경"><span class="blind">인용문1</span></a></li><li class="__se_blockquote2 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_blockquote2" data-group="blockquote" data-nclick="type2" data-value="line" title="인용문2로 변경"><span class="blind">인용문2</span></a></li><li class="__se_blockquote3 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_blockquote3" data-group="blockquote" data-nclick="type3" data-value="bubble" title="인용문3으로 변경"><span class="blind">인용문3</span></a></li><li class="__se_blockquote4 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_blockquote4" data-group="blockquote" data-nclick="type4" data-value="underline" title="인용문4로 변경"><span class="blind">인용문4</span></a></li><li class="__se_blockquote5 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_blockquote5" data-group="blockquote" data-nclick="type5" data-value="postit" title="인용문5로 변경"><span class="blind">인용문5</span></a></li><li class="__se_blockquote6 se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_blockquote6" data-group="blockquote" data-nclick="type6" data-value="corner" title="인용문6으로 변경"><span class="blind">인용문6</span></a></li><li class="__se_blockquote1 se_toolbar_list se_toolbar_blockquote is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="인용문1로 변경" class="__se_toolbar_btn se_toolbar_button se_blockquote1" data-group="blockquote1" data-nclick="quo">
+		<span class="blind">인용문1</span>
+    </a>
+</li><li class="__se_dropCapLetter se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_dropCapLetter" data-group="dropCapLetter" data-nclick="dropcap" title="머리글자">
+		
+        
+		<span class="blind">머리글자</span></a>
+</li><li class="__se_superscript se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_superscript" data-group="superscript" data-nclick="sup" title="위첨자">
+		<i class="ico_new_dot"></i>
+        
+		<span class="blind">위첨자</span></a>
+</li><li class="__se_subscript se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_subscript" data-group="subscript" data-nclick="sub" title="아래첨자">
+		
+        <i class="ico_new_dot"></i>
+		<span class="blind">아래첨자</span></a>
+</li><li class="__se_wrapClear se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="감싸기 해제" class="__se_toolbar_btn se_toolbar_button se_wrapClear" data-group="wrapClear" data-nclick="tpb*s.delAll">
+		<span class="blind">감싸기 해제</span>
+    </a>
+</li><li class="__se_wrapInnerLeft se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerLeft" data-group="wrapAround" data-nclick="inleft" data-value="inner-left" title="내부 좌측 정렬"><span class="blind">내부 좌측 정렬</span></a></li><li class="__se_wrapInnerRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerRight" data-group="wrapAround" data-nclick="inright" data-value="inner-right" title="내부 우측 정렬"><span class="blind">내부 우측 정렬</span></a></li><li class="__se_wrapInnerBigLeft se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerBigLeft" data-group="wrapAround" data-nclick="bigleft" data-value="inner-big-left" title="큰 이미지 내부 좌측 정렬"><span class="blind">큰 이미지 내부 좌측 정렬</span></a></li><li class="__se_wrapInnerBigRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerBigRight" data-group="wrapAround" data-nclick="bigright" data-value="inner-big-right" title="큰 이미지 내부 우측 정렬"><span class="blind">큰 이미지 내부 우측 정렬</span></a></li><li class="__se_wrapClear se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapClear" data-group="wrapAroundWithClear" data-nclick="tpb*s.delAll" data-value="default" title="기본 정렬"><span class="blind">기본 정렬</span></a></li><li class="__se_wrapInnerLeft se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerLeft" data-group="wrapAroundWithClear" data-nclick="inleft" data-value="inner-left" title="내부 좌측 정렬"><span class="blind">내부 좌측 정렬</span></a></li><li class="__se_wrapInnerRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerRight" data-group="wrapAroundWithClear" data-nclick="inright" data-value="inner-right" title="내부 우측 정렬"><span class="blind">내부 우측 정렬</span></a></li><li class="__se_wrapInnerBigLeft se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerBigLeft" data-group="wrapAroundWithClear" data-nclick="bigleft" data-value="inner-big-left" title="큰 이미지 내부 좌측 정렬"><span class="blind">큰 이미지 내부 좌측 정렬</span></a></li><li class="__se_wrapInnerBigRight se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_wrapInnerBigRight" data-group="wrapAroundWithClear" data-nclick="bigright" data-value="inner-big-right" title="큰 이미지 내부 우측 정렬"><span class="blind">큰 이미지 내부 우측 정렬</span></a></li><li class="__se_code_default se_toolbar_list is-active"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_code_default" data-group="codeTheme" data-nclick="type1" data-value="default" title="코드 테마 type1로 변경"><span class="blind">테마 type1</span></a></li><li class="__se_code_stripe se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_code_stripe" data-group="codeTheme" data-nclick="type2" data-value="code_stripe" title="코드 테마 type2로 변경"><span class="blind">테마 type2</span></a></li><li class="__se_code_black se_toolbar_list"><a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_code_black" data-group="codeTheme" data-nclick="type3" data-value="code_black" title="코드 테마 type3로 변경"><span class="blind">테마 type3</span></a></li><li class="__se_specialLetter se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_specialLetter" title="특수문자" data-nclick="smb"></a>
+    <div class="__se_select_options se_toolbarOption se_specialLetterGroup">
+        <div class="se_subSetSpecialLetter">
+            <span class="se_subSetTitle __se_button_label">많이 쓰는 기호</span>
+            <div class="se_specialLetter_small">
+                <ul class="__se_recent_used_char_container se_specialLetter_list"><li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>※</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>☆</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>★</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>●</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>·</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>◆</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>→</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>↑</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>▶</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>♥</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>♬</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>♪</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>☞</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>©</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>☎</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>㉿</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>∞</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>￥</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>￡</span></button></li>
+<li><button type="button" class="__se_char" onclick="clickcr(this, &#39;smb.recent&#39;, &#39;&#39;, &#39;&#39;, event);"><span>℃</span></button></li>
+</ul>
+            </div>
+            <button type="button" class="__se_more_char other_char_more_btn" onclick="clickcr(this, &#39;smb.more&#39;, &#39;&#39;, &#39;&#39;, event);"><span>다른 기호 보기</span></button>
+        </div>
+    </div>
+</li><li class="se_link se_toolbar_list se_link_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_link" title="링크 입력하기" data-group="link" data-nclick="urllink">
+        <span class="blind">링크</span>
+    </a>
+    <div class="se_toolbarOption se_link_group">
+        <div class="se_link_input_holder">
+            <label for="se_link_input"></label>
+            <input type="text" placeholder="" class="__se_input se_link_input">
+            <div class="se_wrap_inputBtn is-on">
+                <button type="button" class="__se_cancel se_btn_link_close is-on" title="취소" data-nclick="urlcancel" style="display:none;"></button>
+                <button type="button" class="__se_apply se_btn_link_apply is-on" title="확인" data-nclick="urlok"></button>
+            </div>
+        </div>
+    </div>
+</li><li class="__se_tableLayoutGroup se_toolbar_list">
+        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_table_layout" data-group="tableLayoutGroup" title="표 스타일">
+            <span class="blind">표 스타일</span>
+        </a>
+        <div class="se_toolbarOption se_tableLayoutOption">
+            <ul class="__se_select_options se_tableLayout_wrap">
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_default is-selected" data-value="default" data-nclick="default" title="기본표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout1" data-value="table_layout1" data-nclick="layout1" title="상단 음영이 들어간 표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout2" data-value="table_layout2" data-nclick="layout2" title="안쪽은 점선으로, 상단음영이 들어간 표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout3" data-value="table_layout3" data-nclick="layout3" title="표 바깥쪽 좌측과 우측 테두리가 없는, 상단음영, 마지막행에 이중선이 들어간 표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout4" data-value="table_layout4" data-nclick="layout4" title="표 바깥쪽 좌측과 우측 테두리가 없는 표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout5" data-value="table_layout5" data-nclick="layout5" title="맨 상단과 하단에 두꺼운 테두리가 있는 표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout6" data-value="table_layout6" data-nclick="layout6" title="표 바깥쪽 하단에만 테두리가 있고 안쪽은 행만 테두리, 제목 아래선이 굵은 선이 들어간 표로 바꾸기">
+                        </a>
+                    </li>
+                    <li class="se_toolbarOption_list">
+                        <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_tableLayout_preset se_table_layout7" data-value="table_layout7" data-nclick="layout7" title="테두리 없이 홀수 행에 음영이 들어간 표로 바꾸기">
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </li><li class="__se_table_width se_toolbar_list">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_table_width" title="표 너비" data-nclick="width">
+        <span class="blind">표 너비</span>
+    </a>
+    <div class="__se_select_options se_toolbarOption se_table_width_group">
+        <div class="se_viewArea se_table_width_wrap">
+            <label for="se_table_width_range" class="se_table_width_label">표 너비</label>
+            <div class="se_table_width_bar">
+                <input type="range" class="se_table_slider" id="se_table_width_range" min="1" max="100" value="100">
+            </div>
+            <div class="se_table_width_value">
+                <input type="number" step="1" min="1" max="100" class="__se_table_width_input se_table_width_input" value="100">
+            </div>
+            <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_submit_btn se_btn_table_width_apply"><span class="blind">표 너비 적용</span></a>
+        </div>
+    </div>
+</li><li class="__se_componentAlignGroup se_toolbar_list se_componentAlignGroup">
+
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_toolbar_btn se_toolbar_button se_componentAlignGroup-left" data-group="componentAlignGroup" title="컴포넌트 정렬"></a>
+
+        <ul class="__se_select_options se_toolbarOption se_componentAlignOption">
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_componentAlignGroup-left is-selected" data-value="left" data-nclick="compleft" title="왼쪽 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_componentAlignGroup-center" data-value="center" data-nclick="compcenter" title="가운데 정렬">
+                </a>
+            </li>
+            <li class="se_toolbarOption_list">
+                <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="se_toolbar_button se_componentAlignGroup-right" data-value="right" data-nclick="compright" title="오른쪽 정렬">
+                </a>
+            </li>
+        </ul>
+    </li><li class="__se_remove se_toolbar_list is-on">
+    <a href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" title="컴포넌트 삭제" class="__se_toolbar_btn se_toolbar_button se_remove" data-group="delete" data-nclick="del">
+		<span class="blind">컴포넌트 삭제</span>
+    </a>
+</li></ul>
+        </div>
+    </div>
+</div><div class="fixedsticky-dummy" style="height: 0px;"></div>
+            <div class="se_selectionArea"></div>
+		<div class="se_viewArea se_fs_T3 se_ff_nanumgothic se_align-left" data-name="se.TextSubCompView">
+    <div class="se_editView">
+        <div class="__subWrap se_textView">
+            <div class="__textArea __focusable se_textarea">
+                
+            <div contenteditable="true" class="__drag_cancel se_editable " data-name="se.EditableSubCompView"><span>1. c() 함수를 이용해 다섯 개의 숫자로 된 변수를 만들어 보기<br></span><span><br></span><span>2. 콜론(:)을 이용해 시작 숫자와 마지막 숫자를 입력하면 1씩 증가하면서 연속된 숫자로 변수를 만들기<br></span><span><br></span><span>3. seq() 함수로도 연속 값을 지닌변수를 만들수 있습니다. seq() 함수는 괄호 안에 시작</span></div></div>
+        </div>
+    </div>
+</div></div>
+	</div><div class="__se_insert_point se_wrap_addComponent is-hover">
+    <div class="se_layer_addComponent">
+        <a role="button" href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_addText_btn se_btn_addTextComponent" style="display: none;"><span class="blind">텍스트 컴포넌트 추가하기</span></a>
+        <a role="button" href="http://blog.editor.naver.com/editor/canvas?serviceId=blog&amp;deviceType=desktop&amp;docType=normal#" class="__se_marker_btn se_btn_addComponent"><span class="blind">컴포넌트 추가하기, 추가할 컴포넌트를 선택하세요.</span></a>
+
+        <div class="__se_btn_panel se_wrap_addButton">
+            <button type="button" class="__se_add_component_btn paragraph" data-role="paragraph" title="텍스트" onmousedown="clickcr(this, &#39;ipt.text&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">텍스트</span></button>
+            <button type="button" class="__se_add_component_btn camera" data-role="image" title="사진" onmousedown="clickcr(this, &#39;ipt.photo&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">사진</span></button>
+            
+            <button type="button" class="__se_add_component_btn video" data-role="video" title="동영상" onmousedown="clickcr(this, &#39;ipt.movie&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">동영상</span></button>
+            <button type="button" class="__se_add_component_btn search" data-role="material" title="글감" onmousedown="clickcr(this, &#39;ipt.material&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">글감</span></button>
+            <button type="button" class="__se_add_component_btn map" data-role="map" title="장소" onmousedown="clickcr(this, &#39;ipt.map&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">장소</span></button>
+            <button type="button" class="__se_add_component_btn sticker" data-role="sticker" title="스티커" onmousedown="clickcr(this, &#39;ipt.sticker&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">스티커</span></button>
+            
+            <button type="button" class="__se_add_component_btn horizontalLine" data-role="horizontalLine" title="구분선" onmousedown="clickcr(this, &#39;ipt.division&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">구분선</span></button>
+            <button type="button" class="__se_add_component_btn quote" data-role="quotation" title="인용구" onmousedown="clickcr(this, &#39;ipt.quotation&#39;, &#39;&#39;, &#39;&#39;, event);"><span class="blind">인용구</span></button>
+        </div>
+    </div>
+</div>
+</div></div>
+	</div>
+	<!-- [D] 배경이미지 위치 이동 시 다른 영역 가려주는 blocker div -->
+	<!-- [D] body 의 is-movingBg 클래스를 상속 받아서 css로 display 속성 제어 함 -->
+	<div class="se_movingBg_dim"></div>
+<div class="se_input_tag">
+    <div class="se_sectionArea">
+        <div class="se_editArea">
+            <div class="se_viewArea se_tag_wrap">
+                <strong class="se_tag_label">태그</strong>
+                <div class="se_tag_area">
+                    <span class="se_tag_input_holder"><input type="text" id="input_tag" class="input_tag tagit-hidden-field" placeholder="입력 (최대 10개)"><ul class="tagit ui-widget ui-widget-content ui-corner-all"><li class="tagit-new"><input type="text" class="ui-widget-content ui-autocomplete-input" placeholder="입력 (최대 10개)" autocomplete="off"></li></ul></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+
+
+
+    
+    
+        <script src="./se_canvas_init.min.js.다운로드"></script>
+    
+
+<script>
+    window.onload = function(){
+        
+            // 로그 기록 셋팅
+            $SE_LOGGER.initialize({
+                serviceId: "blog",
+                docType: "normal",
+                deviceType: "desktop",
+                buildProfile: "real"
+            });
+        
+
+        $SECanvasLauncher.launch(window);
+
+    };
+</script>
+
+
+<script src="./se_lib_core_1.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592976847871" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_core_2.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592976847871" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_core_3.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592976847871" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_core_4.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592976847871" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_core_plugin.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929806208486" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_ext_plugin_1.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592983742595" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_ext_plugin_2.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592983742595" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_lib_ext_plugin_3.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_152895592983742595" data-mode="parallel" crossorigin="anonymous"></script><div id="toast-container" class="pop_toast_wrap"><div class="pop_toast"><div class="toast_msg_wrap"></div></div></div><script src="./se_common_1.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929884171713" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_common_2.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929884171713" data-mode="parallel" crossorigin="anonymous"></script><script src="./se_template_common.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929890795039" data-mode="parallel" crossorigin="anonymous"></script><script src="./blog_desktop_normal_template_canvas.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929890795039" data-mode="parallel" crossorigin="anonymous"></script><script src="./blog_desktop_normal_editor_canvas_pre_res.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929890795039" data-mode="parallel" crossorigin="anonymous"></script><script src="./blog_desktop_normal_editor_canvas_control.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929902854717" data-mode="parallel" crossorigin="anonymous"></script><script src="./blog_desktop_normal_editor_canvas_view.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929902854717" data-mode="parallel" crossorigin="anonymous"></script><script src="./blog_desktop_normal_editor_canvas_model.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929902854717" data-mode="parallel" crossorigin="anonymous"></script><script src="./blog_desktop_normal_editor_canvas_app.min.js.다운로드" class="__lazyLoad" charset="utf-8" type="text/javascript" data-seqid="__callback_1528955929902854717" data-mode="parallel" crossorigin="anonymous"></script><div class="__se_nautosize_div" style="display: none; font-family: 나눔고딕, nanumgothic, se_NanumGothic, AppleSDGothicNeo, sans-serif, simhei; font-size: 32px; line-height: 42px; text-align: left; font-style: normal; font-weight: 400; text-decoration: none solid rgb(0, 0, 0); width: 693px; white-space: pre-wrap; word-wrap: break-word; word-break: break-word;">변수 만들기<br></div><div class="se_dragPosition" style="opacity:0;top:0px;"></div><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content tagit-autocomplete" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><iframe src="./phup_frame.html" style="display: none; position: absolute; width: 1px; height: 1px; left: -100px; top: -100px;"></iframe><iframe src="./phup_frame(1).html" style="display: none; position: absolute; width: 1px; height: 1px; left: -100px; top: -100px;"></iframe><iframe src="./phup_frame(2).html" style="display: none; position: absolute; width: 1px; height: 1px; left: -100px; top: -100px;"></iframe><iframe src="./phup_frame(3).html" style="display: none; position: absolute; width: 1px; height: 1px; left: -100px; top: -100px;"></iframe><iframe src="./phup_frame(4).html" style="display: none; position: absolute; width: 1px; height: 1px; left: -100px; top: -100px;"></iframe><iframe src="./phup_frame(5).html" style="display: none; position: absolute; width: 1px; height: 1px; left: -100px; top: -100px;"></iframe></body></html>
